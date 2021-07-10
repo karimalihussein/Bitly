@@ -5,13 +5,12 @@ namespace karimalihussein\Bitly;
 
 class Bitly{
 
-    private const token = 'c687d58f6d6d7616dcb2b55311f4b05562298134';
     public static function shorten($long_link = ''){
         if(empty($long_link)){
             throw new \Exception('please provide long link');
         }
         if(is_null($token = getBitlyToken())){
-          throw new \Exception('please provide token in bitlyconfig.php config file');
+          throw new \Exception('Please provide token in bitlyconfig.php config file');
         }
         $curl = curl_init();
         $requestBody = json_encode(

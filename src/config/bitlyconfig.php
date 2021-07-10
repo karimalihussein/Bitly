@@ -1,4 +1,4 @@
 <?php 
 return [
-    'token'    => env('BITLY_TOKEN',NULL),
+    'token'  => env('BITLY_TOKEN', null),
 ];
