@@ -1,0 +1,32 @@
+{
+    "name": "karimalihussein/bitly",
+    "description": "shorten long urls using  Bitly Api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karim Ali Hussein",
+            "email": "karimalihussein99@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "karimalihussein\\Bitly\\": "src/"
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "karimalihussein\\Bitly\\BitlyServiceProvider"
+            ],
+            "aliases": {
+                "Bitly": "karimalihussein\\Bitly\\Bitly"
+            }
+        }
+    }
+}
